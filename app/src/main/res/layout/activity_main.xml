@@ -21,7 +21,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_height="50dp"
             android:layout_width="0dp"
-            android:src="@color/black"
+            android:src="@mipmap/ic_launcher_round"
             android:contentDescription="@string/image_view_description"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
