@@ -17,8 +17,10 @@
 
     <ImageView
             app:layout_constraintTop_toBottomOf="@+id/text"
-            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_height="50dp"
+            android:layout_width="0dp"
             android:src="@color/black"
             android:contentDescription="@string/image_view_description"/>
 
