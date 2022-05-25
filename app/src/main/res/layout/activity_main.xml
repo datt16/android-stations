@@ -6,14 +6,6 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <TextView
-            android:id="@+id/top_text_editor_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/editor_label_hint_text"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
             android:id="@+id/top_text_editor"
             android:layout_width="0dp"
@@ -21,10 +13,9 @@
             android:autofillHints="none"
             android:hint="@string/editor_hint_text"
             android:inputType="textShortMessage"
-            android:labelFor="@id/top_text_editor_label"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/top_text_editor_label" />
+            app:layout_constraintTop_toTopOf="parent" />
 
     <Button
             android:id="@+id/save_button"
