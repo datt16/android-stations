@@ -7,21 +7,42 @@
         tools:context=".MainActivity">
 
     <TextView
-            android:id="@+id/text"
+            android:id="@+id/top_text_editor_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
+            android:text="@string/editor_label_hint_text"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-            app:layout_constraintTop_toBottomOf="@+id/text"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_height="50dp"
+    <EditText
+            android:id="@+id/top_text_editor"
             android:layout_width="0dp"
-            android:src="@drawable/ic_launcher_background"
-            android:contentDescription="@string/image_view_description"/>
+            android:layout_height="wrap_content"
+            android:autofillHints="none"
+            android:hint="@string/editor_hint_text"
+            android:inputType="textShortMessage"
+            android:labelFor="@id/top_text_editor_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_text_editor_label" />
+
+    <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_button_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_text_editor" />
+
+    <TextView
+            android:id="@+id/saved_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
