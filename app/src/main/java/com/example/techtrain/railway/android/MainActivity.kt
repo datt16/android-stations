@@ -1,20 +1,23 @@
 package com.example.techtrain.railway.android
 
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.techtrain.railway.android.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        val saveBtn = findViewById<Button>(R.id.save_button)
-        val textEditor = findViewById<EditText>(R.id.top_text_editor)
-        val savedTextView = findViewById<TextView>(R.id.saved_text_view)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        val saveBtn = binding.saveButton
+        val textEditor = binding.topTextEditor
+        val savedTextView = binding.savedTextView
 
         saveBtn.setOnClickListener {
             val newText = textEditor.text

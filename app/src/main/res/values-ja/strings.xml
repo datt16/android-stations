@@ -2,5 +2,6 @@
 <resources>
     <string name="display_text">ハロー コトリン</string>
     <string name="save_button_text">保存</string>
-    <string name="editor_hint_text">ここに何かテキストを入力</string>
+    <string name="editor_hint_text">ニックネーム</string>
+    <string name="editor_label">ニックネーム入力欄</string>
 </resources>

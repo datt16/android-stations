@@ -5,4 +5,5 @@
     <string name="save_button_text">保存</string>
     <string name="editor_hint_text">ここに何かテキストを入力</string>
     <string name="editor_label_hint_text">入力欄</string>
+    <string name="editor_label">テキスト入力欄</string>
 </resources>
